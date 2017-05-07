@@ -1,0 +1,212 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>Requirements Guideline</title>
+		<link type="text/css" rel="stylesheet" href="../../styles/guideline.css"/>
+	</head>
+	<body>
+		<div class="icondiv">
+			<a href="Requirements_oc.html">
+				<img src="../../icons/icons_16/card_icon_16.png" border="0"/>
+			</a>
+		</div>
+		<p align="right">
+			<b>Essence Kernel</b>
+		</p>
+		<h1 id="name_block">
+			<img border="0" src="../../icons/icons_64/alpha_64_solution.png"/> Requirements
+		</h1>
+		<ol class="toc" style="list-style: none;">
+			<li>
+				<a href="#introduction">Introduction</a>
+			</li>
+			<li>
+				<a href="#justification">Justification: Why Requirements?</a>
+			</li>
+			<li>
+				<a href="#progressing">Progressing the Requirements</a>
+			</li>
+			<li>
+				<a href="#validStates">States</a>
+				<ol style="list-style: none;">
+					<li>
+						<a href="#conceived">Conceived</a>
+					</li>
+					<li>
+						<a href="#bounded">Bounded</a>
+					</li>
+					<li>
+						<a href="#coherent">Coherent</a>
+					</li>
+					<li>
+						<a href="#acceptable">Acceptable</a>
+					</li>
+					<li>
+						<a href="#addressed">Addressed</a>
+					</li>
+					<li>
+						<a href="#fulfilled">Fulfilled</a>
+					</li>
+				</ol>
+			</li>
+			<li>
+				<a href="#contents">Contents</a>
+				<ol style="list-style: none;">
+					<li>
+						<a href="#essentialContents">Essential content</a>
+					</li>
+					<li>
+						<a href="#describedBy">Described by</a>
+					</li>
+					<li>
+						<a href="#relatedAlphas">Related alphas</a>
+					</li>
+				</ol>
+			</li>
+			<li>
+				<a href="#references">References</a>
+				<ol style="list-style: none;">
+					<li>
+						<a href="#readings">Recommended reading</a>
+					</li>
+				</ol>
+			</li>
+		</ol>
+		<h1 id="introduction">Introduction</h1>
+		<p id="brief">
+			<ins>Requirements:</ins> What the software system must do to address the opportunity and satisfy the stakeholders.
+		</p>
+		<p id="characteristics">It is important to discover what is needed from the software system, share this understanding among the stakeholders and the team members, and use it to drive the development and testing of the new system.</p>
+		<h1 id="justification">Justification: Why Requirements?</h1>
+		<p>The requirements capture what the stakeholders want from the system. They define what the system must do, but not necessarily how it must do it. They describe the value the system will provide by addressing the opportunity and how the opportunity will be pursued by the production of a new software system. They also scope and constrain the work by defining what needs to be achieved.</p>
+		<p>The requirements are captured as a set of requirement items. The requirement items can be communicated and recorded in various forms and at various levels of detail. They may be communicated explicitly as a set of extensive requirements documents or more tacitly in the form of conversations and brain-storming sessions. The requirement items themselves are always documented and tracked. The documentation can take many forms and be as brief as a one-line user story or as comprehensive as a use case.</p>
+		<p>As the development of the system proceeds, the requirements evolve and are constantly re-prioritized and adjusted to reflect the changing needs of the stakeholders. Much that is implicit at first is made explicit later by adding more detailed requirement items such as well-defined quality characteristics and test cases. This allows the requirements to act as a verifiable specification for the software system. Regardless of how the requirement items are captured it is essential that the software system produced can be shown to successfully fulfill the requirements. This is why requirements play such an essential role in the testing of the system. As well as providing a definition of what needs to be achieved, they also allow tracking of what has been achieved. As the testing of each requirement item is completed it can be individually checked off as done, and the requirements as a whole can be looked at to see if the system produced sufficiently fulfils the requirements and whether or not work on the system is finished.</p>
+		<p>It is important that the overall state of the requirements is understood as well as the state of the individual requirement items. If the overall state of the requirements is not understood then it will be impossible to 1) tell when the system is finished, and 2) judge whether or not an individual requirement item is a requirement for this system or another system.</p>
+		<h1 id="progressing">Progressing the Requirements</h1>
+		<p>During the development of a software system the requirements progress through several state changes. As presented in the figure below, they are conceived, bounded, coherent, acceptable, addressed, and fulfilled. These states focus on the evolution of the team’s understanding of what the proposed system must do, from the conception of a new set of requirements as an initial idea for a new software system through their development to their fulfillment by the provision of a usable software system.</p>
+		<p>
+			<img border="0" src="../../images/requirements_states.png"/>
+		</p>
+		<p>The requirements start in the conceived state when the need for a new software system has been agreed. The stakeholders can hold differing views on the overall meaning of the requirements. However, they all agree that there is a need for a new software system and a clear opportunity to be pursued.</p>
+		<p>Before too much time is spent collecting and detailing the individual requirement items the requirements as a whole must be bounded. To bound the requirements, the overall scope of the new system, the aspects of the opportunity to be addressed, and the mechanisms for managing and accepting new or changed requirement items all need to be established. In the bounded state there may still be inconsistencies or ambiguities between the individual requirement items. However, the stakeholders now have a shared understanding of the purpose of the new system and can tell whether or not a request qualifies as a requirement item. They also understand the mechanisms to be used to evolve the requirement items and remove the inconsistencies. Once the requirements are bounded there is a shared understanding of the scope of the new system and it is safe to start implementing the most important requirement items.</p>
+		<p>Further elicitation, refinement, analysis, negotiation, demonstration and review of the individual requirement item leads to a coherent set of requirements, one that clearly defines the essential characteristics of the new system. The requirement items continue to evolve as more is learnt about the new system and its impact on its stakeholders and environment. No matter how much the requirement items change, it is essential that they stay within the bounds of the original concept and that they remain coherent at all times.</p>
+		<p>The continued evolution of the requirements leads to the capture of an acceptable set of requirements, one that defines a system that will be acceptable to the stakeholders as, at least, an initial solution. The requirements may only describe a partial solution; however the solution described is of sufficient value that the stakeholders would accept it for operational use. The number of requirement items that need to be agreed for the requirements to be acceptable to the stakeholders can vary from one to many. When changing a mature system it may be acceptable to just address one important requirement item. When building a replacement system a large number of requirement items will need to be addressed.</p>
+		<p>As the individual requirement items are implemented and a usable system is evolved, there will come a time when enough requirements have been implemented for the new system to be worth releasing and using. In the addressed state the amount of requirements that have been addressed is sufficient for the resulting system to provide clear value to the stakeholders. If the resulting system provides a complete solution then the requirements may advance immediately to the fulfilled state.</p>
+		<p>Usually, when the addressed state is achieved the resulting system provides a valuable but incomplete solution. To fully address the opportunity, additional requirement items may have to be implemented. The shortfall may be because an incremental approach to the delivery of the system was selected, or because the missing requirements were difficult to identify before the system was made available for use.</p>
+		<p>In the fulfilled state enough of the requirement items have been implemented for the stakeholders to agree that the resulting system fully satisfies the need for a new system, and that there are no outstanding requirement items preventing the system from being considered complete. </p>
+		<p>Understanding the current and desired state of the requirements can help everyone understand what the system needs to do and how close to complete it is.</p>
+		<h1 id="validStates">States</h1>
+<h2 id="conceived">
+	<img border="0" src="../../icons/icons_64/state_64_grey.png"/> Conceived
+</h2>
+<p>	The need for a new system has been agreed.</p>
+<h3 id="checkpoints">	Checkpoints</h3>
+<p>	The alpha is in this state when:</p>
+<ul>
+	<li>The initial set of stakeholders agrees that a system is to be produced.</li>
+	<li>The stakeholders that will use the new system are identified.</li>
+	<li>The stakeholders that will fund the initial work on the new system are identified.</li>
+	<li>There is a clear opportunity for the new system to address.</li>
+</ul>
+<h2 id="bounded">
+	<img border="0" src="../../icons/icons_64/state_64_grey.png"/> Bounded
+</h2>
+<p>	The purpose and theme of the new system are clear.</p>
+<h3 id="checkpoints">	Checkpoints</h3>
+<p>	The alpha is in this state when:</p>
+<ul>
+	<li>The stakeholders involved in developing the new system are identified.</li>
+	<li>The stakeholders agree on the purpose of the new system.</li>
+	<li>It is clear what success is for the new system.</li>
+	<li>The stakeholders have a shared understanding of the extent of the proposed solution.</li>
+	<li>The way the requirements will be described is agreed upon.</li>
+	<li>The mechanisms for managing the requirements are in place.</li>
+	<li>The prioritization scheme is clear.</li>
+	<li>Constraints are identified and considered.</li>
+	<li>Assumptions are clearly stated.</li>
+</ul>
+<h2 id="coherent">
+	<img border="0" src="../../icons/icons_64/state_64_grey.png"/> Coherent
+</h2>
+<p>	The requirements provide a coherent description of the essential characteristics of the new system.</p>
+<h3 id="checkpoints">	Checkpoints</h3>
+<p>	The alpha is in this state when:</p>
+<ul>
+	<li>The requirements are captured and shared with the team and the stakeholders. </li>
+	<li>The origin of the requirements is clear.</li>
+	<li>The rationale behind the requirements is clear.</li>
+	<li>Conflicting requirements are identified and attended to.</li>
+	<li>The requirements communicate the essential characteristics of the system to be delivered.</li>
+	<li>The most important usage scenarios for the system can be explained.</li>
+	<li>The priority of the requirements is clear.</li>
+	<li>The impact of implementing the requirements is understood.</li>
+	<li>The team understands what has to be delivered and agrees to deliver it.</li>
+</ul>
+<h2 id="acceptable">
+	<img border="0" src="../../icons/icons_64/state_64_grey.png"/> Acceptable
+</h2>
+<p>	The requirements describe a system that is acceptable to the stakeholders.</p>
+<h3 id="checkpoints">	Checkpoints</h3>
+<p>	The alpha is in this state when:</p>
+<ul>
+	<li>The stakeholders accept that the requirements describe an acceptable solution.</li>
+	<li>The rate of change to the agreed requirements is relatively low and under control.</li>
+	<li>The value provided by implementing the requirements is clear.</li>
+	<li>The parts of the opportunity satisfied by the requirements are clear.</li>
+</ul>
+<h2 id="addressed">
+	<img border="0" src="../../icons/icons_64/state_64_grey.png"/> Addressed
+</h2>
+<p>	Enough of the requirements have been addressed to satisfy the need for a new system in a way that is acceptable to the stakeholders.</p>
+<h3 id="checkpoints">	Checkpoints</h3>
+<p>	The alpha is in this state when:</p>
+<ul>
+	<li>Enough of the requirements are addressed for the resulting system to be acceptable to the stakeholders.</li>
+	<li>The stakeholders accept the requirements as accurately reflecting what the system does and does not do.</li>
+	<li>The set of requirement items implemented provide clear value to the stakeholders.</li>
+	<li>The system implementing the requirements is accepted by the stakeholders as worth making operational.</li>
+</ul>
+<h2 id="fulfilled">
+	<img border="0" src="../../icons/icons_64/state_64_grey.png"/> Fulfilled
+</h2>
+<p>	The requirements that have been addressed fully satisfy the need for a new system.</p>
+<h3 id="checkpoints">	Checkpoints</h3>
+<p>	The alpha is in this state when:</p>
+<ul>
+	<li>The stakeholders accept the requirements as accurately capturing what they require to fully satisfy the need for a new system.</li>
+	<li>There are no outstanding requirement items preventing the system from being accepted as fully satisfying the requirements.</li>
+	<li>The system is accepted by the stakeholders as fully satisfying the requirements.</li>
+</ul>
+		<h1 id="contents">Contents</h1>
+		<h2 id="essentialContents">Essential content</h2>
+		<p>N/A</p>
+		<h2 id="describedBy">Described by</h2>
+		<p id="contents">N/A</p>
+		<h2 id="relatedAlphas">Related alphas</h2>
+		<ul>
+			<li>
+				<a href="../_Kde1gJqWEeGqE71CwgtiTg/Stakeholders_gd.html">Stakeholders</a> demand Requirements
+			</li>
+			<li>
+				<a href="../_thrioJqXEeGqE71CwgtiTg/Opportunity_gd.html">Opportunity</a> focuses Requirements
+			</li>
+			<li>Requirements scope and constrain the 
+				<a href="../_e62xAJs4EeGz7PwLWcYeYg/Work_gd.html">Work</a>
+			</li>
+			<li>
+				<a href="../_hIYJAJqqEeGqE71CwgtiTg/Software System_gd.html">Software System</a>s fulfills Requirements
+			</li>
+		</ul>
+		<h1 id="references">References</h1>
+		<h2 id="readings">Recommended reading</h2>
+		<ul>
+			<li>Refer to 
+				<a href="http://www.semat.org" target="_blank">www.semat.org</a>
+			</li>
+		</ul>
+		<hr></hr>
+		<p style="text-align:center;">Copyright &#169; 2012 Ivar Jacobson International AB, Florida Atlantic University, Fujitsu, Impetus, International Business Machines Corporation, KTH Royal Institute of Technology, Metamaxim Ltd., PEM Systems, Stiftelsen SINTEF, University of Duisburg-Essen.  , ver. 1.0.3</p>
+	</body>
+</html>

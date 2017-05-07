@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8' ?><!DOCTYPE HTML>
+<html xmlns="">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>Identified State Card</title>
+<script type="text/javascript">
+    var checkpointStartY = 160; // y position to start checkpoints  
+    var checkpointLineHeight = 15; // height of each checkpoint text line 
+    var checkpointLineSpace = 7; // space between ckeckpoints 
+    var checkpointTextSize = "14"; // font size on checkpoints 
+    var checkpointEndY = 365; // if checkpoints goes beyond this Y treshold, the height of the card will be increased 
+    var stateCardInput = [ ["Opportunity","Identified","1/6","#C9FFC9"],["An idea for a way of improving current ways of working, increasing market share or applying a new or innovative software system has been identified.","At least one of the stakeholders wishes to make an investment in better understanding the opportunity and the value associated with addressing it.","The other stakeholders who share the opportunity have been identified."]];
+    function init() { drawStateCard(stateCardInput,checkpointStartY,checkpointLineHeight,checkpointLineSpace,checkpointTextSize,checkpointEndY); continueInit(); }
+</script>
+<script type="text/javascript" src="../../scripts/draw_card_diagrams.js"></script>
+</head>
+  <body>
+	 <a href="Opportunity_oc.html"><img border="0" src="../../icons/icons_16/card_icon_16.png"/></a></br>
+    <div style="display:none;">
+      <canvas id="canvas" width="300" height="435">Your web browser has no support for canvas.</canvas>
+    </div>
+    <img id="cardpic"/>
+  </body>
+</html>

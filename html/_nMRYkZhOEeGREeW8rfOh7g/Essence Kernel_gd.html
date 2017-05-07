@@ -1,0 +1,337 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	
+<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>Essence Kernel Guideline</title>
+		<link type="text/css" rel="stylesheet" href="../../styles/guideline.css"/>
+	</head>
+	<body>
+		<div class="icondiv">
+			<a href="Essence%20Kernel_oc.html">
+				<img src="../..//icons/icons_16/card_icon_16.png" border="0"/>
+			</a>
+		</div>
+		<p align="right">
+			<b> </b>
+		</p>
+		<h1 id="name_block">
+			<img border="0" src="../../icons/icons_64/kernel_64_grey.png"/> Essence Kernel
+		</h1>
+		<ol class="toc" style="list-style: none;">
+			<li>
+				<a href="#preamble"></a>
+			</li>
+			<li>
+				<a href="#introduction">Introduction</a>
+			</li>
+			<li>
+				<a href="#WhatsintheKernel">What’s in the Kernel?</a>
+				<ol style="list-style: none;">
+					<li>
+						<a href="#OrganizingtheKernel">Organizing the Kernel</a>
+					</li>
+					<li>
+						<a href="#AlphasTheThingstoWorkWith">Alphas: The Things to Work With</a>
+					</li>
+					<li>
+						<a href="#ActivitySpacesTheThingstoDo">Activity Spaces: The Things to Do</a>
+					</li>
+					<li>
+						<a href="#CompetenciesTheAbilitiesNeeded">Competencies: The Abilities Needed</a>
+						<ol style="list-style: none;">
+							<li>
+								<a href="#Competencylevel1Assists">Competency level 1 - Assists</a>
+							</li>
+							<li>
+								<a href="#Competencylevel2Applies">Competency level 2 - Applies</a>
+							</li>
+							<li>
+								<a href="#Competencylevel3Masters">Competency level 3 - Masters</a>
+							</li>
+							<li>
+								<a href="#Competencylevel4Adapts">Competency level 4 - Adapts</a>
+							</li>
+							<li>
+								<a href="#Competencylevel5Innovates">Competency level 5 - Innovates</a>
+							</li>
+							<li>
+								<a href="#Understandingthecompetencylevels">Understanding the competency levels</a>
+							</li>
+						</ol>
+					</li>
+				</ol>
+			</li>
+			<li>
+				<a href="#References">References</a>
+				<ol style="list-style: none;">
+					<li>
+						<a href="#references">Recommended reading</a>
+					</li>
+				</ol>
+			</li>
+		</ol>
+		<h1 id="preamble"></h1>
+		<p>The Essence Kernel is a stripped-down, light-weight set of definitions that captures the essence of effective, scalable software engineering in a practice independent way.</p>
+		<h1 id="introduction">Introduction</h1>
+		<p id="brief">The focus of the kernel is to define a common basis for the definition of software development practices, one that allows them to be defined and applied independently. The practices can then be mixed and matched to create specific software engineering methods tailored to the specific needs of a specific software engineering community, project, team or organization.</p>
+		<p id="purposes">The kernel has many benefits including:</p>
+		<ul>
+			<li>It allows you to apply as few or as many practices as you like.</li>
+			<li>It allows you to easily capture your current practices in a reusable and extendable way.</li>
+			<li>It allows you to evaluate your current practices against a technique neutral control framework.</li>
+			<li>It allows you to align and compare your on-going work and methods to a common, technique neutral framework, and then to complement it with any missing critical practices or process elements.</li>
+			<li>It allows you to start with a minimal method adding practices as the endeavor progresses and when you need them.</li>
+		</ul>
+		<h1 id="WhatsintheKernel">What’s in the Kernel?</h1>
+		<p id="content">The kernel is described using a small subset of the Kernel Language. It is organized into three areas of concern, each containing a small number of:</p>
+		<ul>
+			<li>
+				<b>Alphas</b> – representations of the essential things to work with. The Alphas provide descriptions of the kind of things that a team will manage, produce, and use in the process of developing, maintaining and supporting good software. They also act as the anchor for any additional sub-alphas and work products required by the software engineering practices.
+			</li>
+			<li>
+				<b>Activity Spaces</b> - representations of the essential things to do. The Activity Spaces provide descriptions of the challenges a team faces when developing, maintaining and supporting software systems, and the kinds of things that the team will do to meet them.
+			</li>
+			<li>
+				<b>Competencies</b> - representations of the essential competencies required by software engineering practices.
+			</li>
+		</ul>
+		<p>To maintain its practice independence the kernel does not include any instances of the other language elements such as work products or activities. These only make sense within the context of a specific practice.</p>
+		<p>The best way to get an overview of the kernel as a whole is to look at the full set of Alphas and Activity Spaces and how they are related.</p>
+		<h2 id="OrganizingtheKernel">Organizing the Kernel</h2>
+		<p id="organizing">The Kernel is organized into three discrete areas of concern, each focusing on a specific aspect of software engineering. As shown in the figure below, these are:</p>
+		<ul>
+			<li>
+				<a href="../_HmSbYJqVEeGqE71CwgtiTg/Customer_gd.html">Customer</a> – This area of concern contains everything to do with the actual use and exploitation of the software system to be produced.
+			</li>
+			<li>
+				<a href="../_OJ55YJqVEeGqE71CwgtiTg/Solution_gd.html">Solution</a> – This area of concern contains everything to do the specification and development of the software system.
+			</li>
+			<li>
+				<a href="../_PK6qcJqVEeGqE71CwgtiTg/Endeavor_gd.html">Endeavor</a> – This area of concern contains everything to do with the team, and the way that they approach their work.
+			</li>
+		</ul>
+		<p>
+			<img border="0" src="../../images/kernel_areas.png"/>
+		</p>
+		<p>Throughout the diagrams in the body of the kernel specification, the three areas of concern are distinguished with different color codes where green stands for customer, yellow for solution, and blue for endeavor. The colors will facilitate the understanding and tracking of which area of concern owns which Alphas and Activity Spaces.</p>
+		<h2 id="AlphasTheThingstoWorkWith">Alphas: The Things to Work With</h2>
+		<p id="thingstoworkwith">The kernel Alphas 1) capture the key concepts involved in software engineering, 2) allow the progress and health of any software engineering endeavor to be tracked and assessed, and 3) provide the common ground for the definition of software engineering methods and practices. The Alphas, their relationships and their owning areas of concern are shown in the following figure:</p>
+		<p>
+			<img border="0" src="../../images/things_to_work_with.png"/>
+		</p>
+		<p>In the 
+			<strong>customer</strong> area of concern the team needs to understand the stakeholders and the opportunity to be addressed:
+		</p>
+		<ul>
+			<li>
+				<a href="../../html/_thrioJqXEeGqE71CwgtiTg/Opportunity_gd.html">Opportunity</a>: The set of circumstances that makes it appropriate to develop or change a software system. The opportunity articulates the reason for the creation of the new, or changed, software system. It represents the team’s shared understanding of the stakeholders’ needs, and helps shape the requirements for the new software system by providing justification for its development.
+			</li>
+			<li>
+				<a href="../../html/_Kde1gJqWEeGqE71CwgtiTg/Stakeholders_gd.html">Stakeholders</a>: The people, groups, or organizations who affect or are affected by a software system. The stakeholders provide the opportunity and are the source of the requirements and funding for the software system. They must be involved throughout the software engineering endeavor to support the team and ensure that an acceptable software system is produced.
+			</li>
+		</ul>
+		<p>In the 
+			<strong>solution</strong> area of concern the team needs to establish a shared understanding of the requirements, and implement, build, test, deploy and support a software system that fulfills them:
+		</p>
+		<ul>
+			<li>
+				<a href="../../html/_f9EMcJqqEeGqE71CwgtiTg/Requirements_gd.html">Requirements</a>: What the software system must do to address the opportunity and satisfy the stakeholders. It is important to discover what is needed from the software system, share this understanding among the stakeholders and the team members, and use it to drive the development and testing of the new system.
+			</li>
+			<li>
+				<a href="../../html/_hIYJAJqqEeGqE71CwgtiTg/Software System_gd.html">Software System</a>: A system made up of software, hardware, and data that provides its primary value by the execution of the software. The primary product of any software engineering endeavor, a software system can be part of a larger software, hardware or business solution.
+			</li>
+		</ul>
+		<p>In the 
+			<strong>endeavor</strong> area of concern the team and its way-of-working have to be formed, and the work has to be done:
+		</p>
+		<ul>
+			<li>
+				<a href="../../html/_e62xAJs4EeGz7PwLWcYeYg/Work_gd.html">Work</a>: Activity involving mental or physical effort done in order to achieve a result. In the context of software engineering, work is everything that the team does to meet the goals of producing a software system matching the requirements, and addressing the opportunity, presented by the customer. The work is guided by the practices that make up the team’s way-of-working.
+			</li>
+			<li>
+				<a href="../../html/_IuWcIJtEEeGD_KwXqdXFgA/Team_gd.html">Team</a>: The group of people actively engaged in the development, maintenance, delivery and support of a specific software system. The team plans and performs the work needed to update and change the software system.
+			</li>
+			<li>
+				<a href="../../html/_fv9NAJs4EeGz7PwLWcYeYg/Way of Working_gd.html">Way of Working</a>: The tailored set of practices and tools used by a team to guide and support their work. The team evolves their way of working alongside their understanding of their mission and their working environment. As their work proceeds they continually reflect on their way of working and adapt it as necessary to their current context.
+			</li>
+		</ul>
+		<h2 id="ActivitySpacesTheThingstoDo">Activity Spaces: The Things to Do</h2>
+		<p id="thingstodo">The kernel also provides a set of activity spaces that complement the Alphas to provide an activity based view of software engineering.</p>
+		<p>
+			<img border="0" src="../../images/things_to_do.png"/>
+		</p>
+		<p>In the 
+			<strong>customer</strong> area of concern the team has to understand the opportunity, and support and involve the stakeholders:
+		</p>
+		<ul>
+			<li>
+				<a href="../../html/_36RYAJqgEeGqE71CwgtiTg/Explore Possibilities_gd.html">Explore Possibilities</a>: Explore the possibilities presented by the creation of a new or improved software system. This includes the analysis of the opportunity to be addressed and the identification of the stakeholders.
+			</li>
+			<li>
+				<a href="../../html/_cPnfwJqpEeGqE71CwgtiTg/Understand Stakeholder Needs_gd.html">Involve the Stakeholders</a>: Involve the stakeholders in the day-to-day activities of the team to ensure that the right results are produced. This includes identifying and working with the stakeholder representatives to progress the opportunity.
+			</li>
+			<li>
+				<a href="../../html/_zBdqcJqqEeGqE71CwgtiTg/Ensure Stakeholder Satisfaction_gd.html">Ensure Stakeholder Satisfaction</a>: Share the results of the development work with the stakeholders to gain their acceptance of the system produced and verify that the opportunity has been successfully addressed.
+			</li>
+			<li>
+				<a href="../../html/_RKVigJqrEeGqE71CwgtiTg/Use the System_gd.html">Use the System</a>: Use the system in a live environment to benefit the stakeholders. 
+			</li>
+		</ul>
+		<p>In the 
+			<strong>solution</strong> area of concern the team has to develop an appropriate solution to exploit the opportunity and satisfy the stakeholders:
+		</p>
+		<ul>
+			<li>
+				<a href="../../html/_3zG5cJs3EeGz7PwLWcYeYg/Understand the Requirements_gd.html">Understand the Requirements</a>: Establish a shared understanding of what the system to be produced must do.
+			</li>
+			<li>
+				<a href="../../html/_RW05YJs6EeGD_KwXqdXFgA/Shape the System_gd.html">Shape the System</a>: Shape the system so that it is easy to develop, change and maintain, and can cope with current and expected future demands. This includes the overall design and architecting of the system to be produced.
+			</li>
+			<li>
+				<a href="../../html/_udE20Js6EeGD_KwXqdXFgA/Implement the System_gd.html">Implement the System</a>: Build a system by implementing, testing and integrating one or more system elements. This includes bug fixing and unit testing
+			</li>
+			<li>
+				<a href="../../html/_PUctwJtBEeGD_KwXqdXFgA/Test the System_gd.html">Test the System</a>: Verify that the system produced meets the stakeholders’ requirements.
+			</li>
+			<li>
+				<a href="../../html/_6coU4JtBEeGD_KwXqdXFgA/Deploy the System_gd.html">Deploy the System</a>: Take the tested system and make it available for use outside the development team.
+			</li>
+			<li>
+				<a href="../../html/_QHuIUJtCEeGD_KwXqdXFgA/Operate the System_gd.html">Operate the System</a>: Support the use of the software system in the live environment.
+			</li>
+		</ul>
+		<p>In the 
+			<strong>endeavor</strong> area of concern the team has to be formed and progress the work in-line with the agreed way-of-working:
+		</p>
+		<ul>
+			<li>
+				<a href="../../html/_62RugJtCEeGD_KwXqdXFgA/Prepare to do the Work_gd.html">Prepare to do the Work</a>: Set up the team and its working environment. Understand and commit to completing the work.
+			</li>
+			<li>
+				<a href="../../html/_AstWYJtDEeGD_KwXqdXFgA/Coordinate Activity_gd.html">Coordinate Activity</a>: Co-ordinate and direct the team’s work. This includes all on-going planning and re-planning of the work, and adding any additional resources needed to complete the formation of the team.
+			</li>
+			<li>
+				<a href="../../html/_Fjdp8JtDEeGD_KwXqdXFgA/Support the Team_gd.html">Support the Team</a>: Help the team members to help themselves, collaborate and improve their way of working.
+			</li>
+			<li>
+				<a href="../../html/_KzsNcJtDEeGD_KwXqdXFgA/Track Progress_gd.html">Track Progress</a>: Measure and assess the progress made by the team.
+			</li>
+			<li>
+				<a href="../../html/_QKyN8JtDEeGD_KwXqdXFgA/Stop the Work_gd.html">Stop the Work</a>: Shut-down the software engineering endeavor and the handover of the team’s responsibilities.
+			</li>
+		</ul>
+		<h2 id="CompetenciesTheAbilitiesNeeded">Competencies: The Abilities Needed</h2>
+		<p>The kernel also provides a set of competencies that complement the Alphas and Activity Spaces to provide a view of the key competencies needed to do software engineering. </p>
+		<p>
+			<img border="0" src="../../images/kernel_competencies.png"/>
+		</p>
+		<p>In the 
+			<strong>customer</strong> area of concern the team has to be able to demonstrate a clear understanding of the business and technical aspects of their chosen domain and have the ability to accurately reflect the views of their stakeholders. This requires the following competencies to be available to the team:
+		</p>
+		<ul>
+			<li>
+				<a href="../../html/fb9cf136-d669-4b72-b7c5-0b61e1ed0004/Stakeholder Representation_gd.html">Stakeholder Representation</a>: This competency encapsulates the ability to gather, communicate, and balance the needs of other stakeholders, and accurately represent their views.
+			</li>
+		</ul>
+		<p>In the 
+			<strong>solution</strong> area of concern the team has to be able to capture and analyze the requirements, and build and operate a software system that fulfils them. This requires the following competencies to be available to the team:
+		</p>
+		<ul>
+			<li>
+				<a href="../../html/e51f0935-c77d-4b89-a9aa-afab0d83a4f3/Analysis_gd.html">Analysis</a>: This competency encapsulates the ability to understand opportunities and their related stakeholder needs, and transform them into an agreed and consistent set of requirements.
+			</li>
+			<li>
+				<a href="../../html/265e7c5b-5cdb-4dbf-846b-e2d45278b785/Development_gd.html">Development</a>: This competency encapsulates the ability to design and program effective software systems following the standards and norms agreed by the team.
+			</li>
+			<li>
+				<a href="../../html/835bbd82-6867-48a4-8186-86fc839afd17/Testing_gd.html">Testing</a>: This competency encapsulates the ability to test a system, verifying that it is usable and that it meets the requirements.
+			</li>
+		</ul>
+		<p>In the 
+			<strong>endeavor</strong> area of concern the team has to be able to organize itself and manage its work load. This requires the following competencies to be available to the team:
+		</p>
+		<ul>
+			<li>
+				<a href="../../html/cff34f1b-cc2d-499f-9806-842649feca07/Leadership_gd.html">Leadership</a>: This competency enables a person to inspire and motivate a group of people to achieve a successful conclusion to their work and to meet their objectives.
+			</li>
+			<li>
+				<a href="../../html/9cd108c1-60c0-44a7-87e7-6fbf476ac1b4/Management_gd.html">Management</a>: This competency encapsulates the ability to coordinate, plan and track the work done by a team.
+			</li>
+		</ul>
+		<p>Each competency has five levels of achievement. These are standard across all of the kernel competencies, and are described below. </p>
+		<h3 id="Competencylevel1Assists">Competency level 1 &#8211; Assists</h3>
+		<p>Demonstrates a basic understanding of the concepts and can follow instructions.</p>
+		<p>The following describe the traits of an individual on this level of competency:</p>
+		<ul>
+			<li>Understands and conducts his or her self in a professional manner.</li>
+			<li>Is able to correctly respond to basic questions within his or her domain.</li>
+			<li>Is able to perform most basic functions within the domain.</li>
+			<li>Can follow instructions and complete basic tasks.</li>
+		</ul>
+		<h3 id="Competencylevel2Applies">Competency level 2 &#8211; Applies</h3>
+		<p>Able to apply the concepts in simple contexts by routinely applying the experience gained so far.</p>
+		<p>The following describe the traits of an individual on this level of competency:</p>
+		<ul>
+			<li>Is able to collaborate with others within the Team</li>
+			<li>Is able to satisfy routine demands and simple work requirements.</li>
+			<li>Can handle simple challenges with confidence.</li>
+			<li>Can handle simple work requirements but needs help in handling any complications or difficulties.</li>
+			<li>Is able to reason about the context and draw sensible conclusions.</li>
+		</ul>
+		<h3 id="Competencylevel3Masters">Competency level 3 &#8211; Masters</h3>
+		<p>Able to apply the concepts in most contexts and has the experience to work without supervision.</p>
+		<p>The following describe the traits of an individual on this level of competency:</p>
+		<ul>
+			<li>Is able to satisfy most demands and work requirements.</li>
+			<li>Is able to speak the domain language with ease and accuracy.</li>
+			<li>Is able to communicate and explain his or her work</li>
+			<li>Is able to give and receive constructive feedback</li>
+			<li>Knows the limits of his or her capability and when to call on more expert advice. </li>
+			<li>Works at a professional level with little or no guidance.</li>
+		</ul>
+		<h3 id="Competencylevel4Adapts">Competency level 4 &#8211; Adapts</h3>
+		<p>Able to apply judgment on when and how to apply the concepts to more complex contexts. Can enable others to apply the concepts.</p>
+		<p>The following describe the traits of an individual on this level of competency:</p>
+		<ul>
+			<li>Is able to satisfy complex demands and work requirements.</li>
+			<li>Is able to communicate with others working outside the domain.</li>
+			<li>Can direct and help others working within the domain.</li>
+			<li>Is able to adapt his or her way-of-working to work well with others, both inside and outside their domain.</li>
+		</ul>
+		<h3 id="Competencylevel5Innovates">Competency level 5 &#8211; Innovates</h3>
+		<p>A recognized expert, able to extend the concepts to new contexts and inspire others.</p>
+		<p>The following describe the traits of an individual on this level of competency:</p>
+		<ul>
+			<li>Has many years of experience and is currently up to date in what is happening within the domain.</li>
+			<li>Is recognized as an expert by his or her peers.</li>
+			<li>Supports others in working on a complex professional level. </li>
+			<li>Knows when to innovate or do something different and when to follow normal procedure.</li>
+			<li>Develops innovative and effective solutions to the current challenges within the domain.</li>
+		</ul>
+		<h3 id="Understandingthecompetencylevels">Understanding the competency levels</h3>
+		<p>The higher competency levels build upon the lower ones. An individual at level 2 has all the traits of an individual at level 1 as well as the additional traits required to qualify for level 2. An individual at level 3 has all the traits required at levels 1, 2 and 3, and so on. </p>
+		<p>Individuals at levels 1 and 2 have an awareness or basic understanding of the knowledge, skills, and abilities associated with the competency. However, they do not possess the knowledge, skills, and abilities to perform the competency in difficult or complex situations and typically can only perform simple routine tasks without direction or other guidance.</p>
+		<p>Individuals at level 3 and above have mastered this aspect of their profession and can be trusted to integrate into, and deliver the results required by, the team. </p>
+		<p>There are many factors that drive up the level of competency required by a team, including:</p>
+		<ul>
+			<li>The size and complexity of the work. </li>
+			<li>The size and distribution of the team. </li>
+			<li>The size, complexity and diversity of the stakeholder community.</li>
+			<li>The novelty of the solution being produced.</li>
+			<li>The technical complexity of the solution.</li>
+			<li>The levels of risk facing the team. </li>
+		</ul>
+		<h1 id="References">References</h1>
+		<h2 id="references">Recommended reading</h2>
+		<ul id="readings">
+			<li>Refer to 
+				<a href="http://www.semat.org/" target="_blank">www.semat.org</a>
+			</li>
+		</ul>
+		<hr></hr>
+		<p style="text-align:center;">Copyright &#169; 2012 Ivar Jacobson International AB, Florida Atlantic University, Fujitsu, Impetus, International Business Machines Corporation, KTH Royal Institute of Technology, Metamaxim Ltd., PEM Systems, Stiftelsen SINTEF, University of Duisburg-Essen.  , ver. 1.0.3</p>
+	</body>
+
+</html>

@@ -1,0 +1,343 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>Practice Tree</title>
+		<style type="text/css">div.element { font-family:Verdana; font-size:14px; margin:5px; white-space:nowrap; } span.leftpadspan { padding-left:1px; } span.indent { padding-left:4px; } div.title { font-family: Verdana; font-size: 32px; font-weight: bold; padding-left:20px; } div.owner { font-family: Verdana; font-size: 16px; font-weight: bold; padding-right:10px; } td { border:none; padding:5px; } h1, h2, h3, h4, h5, h6 { font-family:Verdana; font-size:16px; font-weight: bold; } hr { height:2px; color: #C0C0C0; background-color: #C0C0C0; } </style>
+		<script type="text/javascript" src="jquery.min.js"></script>
+		<script type="text/javascript" src="jquery.jstree.js"></script>
+		<script type="text/javascript">
+var reviewFileIcon = "";
+// set reviewFileIcon to the empty string ("") to exclude it from the tree.
+// or change the reviewFileIcon e.g. to word or google doc:
+// var reviewFileIcon = "icons/icons_16/word_icon.gif";
+
+function getReviewFileUrl( elemId ) {
+// set URLs to review files, or exclude if irrelevant:
+
+    if (elemId == "_nMRYkZhOEeGREeW8rfOh7g")
+        return "_nMRYkZhOEeGREeW8rfOh7g/Essence Kernel_gd.docx";
+    if (elemId == "_thrioJqXEeGqE71CwgtiTg")
+        return "_thrioJqXEeGqE71CwgtiTg/Opportunity_gd.docx";
+    if (elemId == "_f9EMcJqqEeGqE71CwgtiTg")
+        return "_f9EMcJqqEeGqE71CwgtiTg/Requirements_gd.docx";
+    if (elemId == "_hIYJAJqqEeGqE71CwgtiTg")
+        return "_hIYJAJqqEeGqE71CwgtiTg/Software System_gd.docx";
+    if (elemId == "_Kde1gJqWEeGqE71CwgtiTg")
+        return "_Kde1gJqWEeGqE71CwgtiTg/Stakeholders_gd.docx";
+    if (elemId == "_IuWcIJtEEeGD_KwXqdXFgA")
+        return "_IuWcIJtEEeGD_KwXqdXFgA/Team_gd.docx";
+    if (elemId == "_fv9NAJs4EeGz7PwLWcYeYg")
+        return "_fv9NAJs4EeGz7PwLWcYeYg/Way of Working_gd.docx";
+    if (elemId == "_e62xAJs4EeGz7PwLWcYeYg")
+        return "_e62xAJs4EeGz7PwLWcYeYg/Work_gd.docx";
+    if (elemId == "_36RYAJqgEeGqE71CwgtiTg")
+        return "_36RYAJqgEeGqE71CwgtiTg/Explore Possibilities_gd.docx";
+    if (elemId == "_cPnfwJqpEeGqE71CwgtiTg")
+        return "_cPnfwJqpEeGqE71CwgtiTg/Understand Stakeholder Needs_gd.docx";
+    if (elemId == "_zBdqcJqqEeGqE71CwgtiTg")
+        return "_zBdqcJqqEeGqE71CwgtiTg/Ensure Stakeholder Satisfaction_gd.docx";
+    if (elemId == "_RKVigJqrEeGqE71CwgtiTg")
+        return "_RKVigJqrEeGqE71CwgtiTg/Use the System_gd.docx";
+    if (elemId == "_3zG5cJs3EeGz7PwLWcYeYg")
+        return "_3zG5cJs3EeGz7PwLWcYeYg/Understand the Requirements_gd.docx";
+    if (elemId == "_RW05YJs6EeGD_KwXqdXFgA")
+        return "_RW05YJs6EeGD_KwXqdXFgA/Shape the System_gd.docx";
+    if (elemId == "_udE20Js6EeGD_KwXqdXFgA")
+        return "_udE20Js6EeGD_KwXqdXFgA/Implement the System_gd.docx";
+    if (elemId == "_PUctwJtBEeGD_KwXqdXFgA")
+        return "_PUctwJtBEeGD_KwXqdXFgA/Test the System_gd.docx";
+    if (elemId == "_6coU4JtBEeGD_KwXqdXFgA")
+        return "_6coU4JtBEeGD_KwXqdXFgA/Deploy the System_gd.docx";
+    if (elemId == "_QHuIUJtCEeGD_KwXqdXFgA")
+        return "_QHuIUJtCEeGD_KwXqdXFgA/Operate the System_gd.docx";
+    if (elemId == "_62RugJtCEeGD_KwXqdXFgA")
+        return "_62RugJtCEeGD_KwXqdXFgA/Prepare to do the Work_gd.docx";
+    if (elemId == "_AstWYJtDEeGD_KwXqdXFgA")
+        return "_AstWYJtDEeGD_KwXqdXFgA/Coordinate Activity_gd.docx";
+    if (elemId == "_Fjdp8JtDEeGD_KwXqdXFgA")
+        return "_Fjdp8JtDEeGD_KwXqdXFgA/Support the Team_gd.docx";
+    if (elemId == "_KzsNcJtDEeGD_KwXqdXFgA")
+        return "_KzsNcJtDEeGD_KwXqdXFgA/Track Progress_gd.docx";
+    if (elemId == "_QKyN8JtDEeGD_KwXqdXFgA")
+        return "_QKyN8JtDEeGD_KwXqdXFgA/Stop the Work_gd.docx";
+    if (elemId == "e51f0935-c77d-4b89-a9aa-afab0d83a4f3")
+        return "e51f0935-c77d-4b89-a9aa-afab0d83a4f3/Analysis_gd.docx";
+    if (elemId == "265e7c5b-5cdb-4dbf-846b-e2d45278b785")
+        return "265e7c5b-5cdb-4dbf-846b-e2d45278b785/Development_gd.docx";
+    if (elemId == "cff34f1b-cc2d-499f-9806-842649feca07")
+        return "cff34f1b-cc2d-499f-9806-842649feca07/Leadership_gd.docx";
+    if (elemId == "9cd108c1-60c0-44a7-87e7-6fbf476ac1b4")
+        return "9cd108c1-60c0-44a7-87e7-6fbf476ac1b4/Management_gd.docx";
+    if (elemId == "fb9cf136-d669-4b72-b7c5-0b61e1ed0004")
+        return "fb9cf136-d669-4b72-b7c5-0b61e1ed0004/Stakeholder Representation_gd.docx";
+    if (elemId == "835bbd82-6867-48a4-8186-86fc839afd17")
+        return "835bbd82-6867-48a4-8186-86fc839afd17/Testing_gd.docx";
+    if (elemId == "_HmSbYJqVEeGqE71CwgtiTg")
+        return "_HmSbYJqVEeGqE71CwgtiTg/Customer_gd.docx";
+    if (elemId == "_PK6qcJqVEeGqE71CwgtiTg")
+        return "_PK6qcJqVEeGqE71CwgtiTg/Endeavor_gd.docx";
+    if (elemId == "_OJ55YJqVEeGqE71CwgtiTg")
+        return "_OJ55YJqVEeGqE71CwgtiTg/Solution_gd.docx";
+
+    return "";
+}
+</script>
+	</head>
+	<body>
+		<div id="explorer">
+			<ul>
+				<li id="_nMRYkZhOEeGREeW8rfOh7g" rel="Kernel">
+					<a href="html/_nMRYkZhOEeGREeW8rfOh7g/Essence%20Kernel_oc.html" target="guideline_frame">Essence Kernel</a>
+					<ul>
+						<li id="ThingsToWorkWith" rel="ThingsToWorkWith">
+							<a href="Essence%20Kernel_HTML/things_to_work_with.html" target="guideline_frame">Things to Work With</a>
+							<ul>
+								<li id="_thrioJqXEeGqE71CwgtiTg" rel="Alpha">
+									<a href="html/_thrioJqXEeGqE71CwgtiTg/Opportunity_oc.html" target="guideline_frame">Opportunity</a>
+								</li>
+								<li id="_f9EMcJqqEeGqE71CwgtiTg" rel="Alpha">
+									<a href="html/_f9EMcJqqEeGqE71CwgtiTg/Requirements_oc.html" target="guideline_frame">Requirements</a>
+								</li>
+								<li id="_hIYJAJqqEeGqE71CwgtiTg" rel="Alpha">
+									<a href="html/_hIYJAJqqEeGqE71CwgtiTg/Software%20System_oc.html" target="guideline_frame">Software System</a>
+								</li>
+								<li id="_Kde1gJqWEeGqE71CwgtiTg" rel="Alpha">
+									<a href="html/_Kde1gJqWEeGqE71CwgtiTg/Stakeholders_oc.html" target="guideline_frame">Stakeholders</a>
+								</li>
+								<li id="_IuWcIJtEEeGD_KwXqdXFgA" rel="Alpha">
+									<a href="html/_IuWcIJtEEeGD_KwXqdXFgA/Team_oc.html" target="guideline_frame">Team</a>
+								</li>
+								<li id="_fv9NAJs4EeGz7PwLWcYeYg" rel="Alpha">
+									<a href="html/_fv9NAJs4EeGz7PwLWcYeYg/Way%20of%20Working_oc.html" target="guideline_frame">Way of Working</a>
+								</li>
+								<li id="_e62xAJs4EeGz7PwLWcYeYg" rel="Alpha">
+									<a href="html/_e62xAJs4EeGz7PwLWcYeYg/Work_oc.html" target="guideline_frame">Work</a>
+								</li>
+							</ul>
+						</li>
+						<li id="ThingsToDo" rel="ThingsToDo">
+							<a href="Essence%20Kernel_HTML/things_to_do.html" target="guideline_frame">Things to Do</a>
+							<ul>
+								<li id="_36RYAJqgEeGqE71CwgtiTg" rel="ActivitySpace">
+									<a href="html/_36RYAJqgEeGqE71CwgtiTg/Explore%20Possibilities_oc.html" target="guideline_frame">Explore Possibilities</a>
+								</li>
+								<li id="_cPnfwJqpEeGqE71CwgtiTg" rel="ActivitySpace">
+									<a href="html/_cPnfwJqpEeGqE71CwgtiTg/Understand%20Stakeholder%20Needs_oc.html" target="guideline_frame">Understand Stakeholder Needs</a>
+								</li>
+								<li id="_zBdqcJqqEeGqE71CwgtiTg" rel="ActivitySpace">
+									<a href="html/_zBdqcJqqEeGqE71CwgtiTg/Ensure%20Stakeholder%20Satisfaction_oc.html" target="guideline_frame">Ensure Stakeholder Satisfaction</a>
+								</li>
+								<li id="_RKVigJqrEeGqE71CwgtiTg" rel="ActivitySpace">
+									<a href="html/_RKVigJqrEeGqE71CwgtiTg/Use%20the%20System_oc.html" target="guideline_frame">Use the System</a>
+								</li>
+								<li id="_3zG5cJs3EeGz7PwLWcYeYg" rel="ActivitySpace">
+									<a href="html/_3zG5cJs3EeGz7PwLWcYeYg/Understand%20the%20Requirements_oc.html" target="guideline_frame">Understand the Requirements</a>
+								</li>
+								<li id="_RW05YJs6EeGD_KwXqdXFgA" rel="ActivitySpace">
+									<a href="html/_RW05YJs6EeGD_KwXqdXFgA/Shape%20the%20System_oc.html" target="guideline_frame">Shape the System</a>
+								</li>
+								<li id="_udE20Js6EeGD_KwXqdXFgA" rel="ActivitySpace">
+									<a href="html/_udE20Js6EeGD_KwXqdXFgA/Implement%20the%20System_oc.html" target="guideline_frame">Implement the System</a>
+								</li>
+								<li id="_PUctwJtBEeGD_KwXqdXFgA" rel="ActivitySpace">
+									<a href="html/_PUctwJtBEeGD_KwXqdXFgA/Test%20the%20System_oc.html" target="guideline_frame">Test the System</a>
+								</li>
+								<li id="_6coU4JtBEeGD_KwXqdXFgA" rel="ActivitySpace">
+									<a href="html/_6coU4JtBEeGD_KwXqdXFgA/Deploy%20the%20System_oc.html" target="guideline_frame">Deploy the System</a>
+								</li>
+								<li id="_QHuIUJtCEeGD_KwXqdXFgA" rel="ActivitySpace">
+									<a href="html/_QHuIUJtCEeGD_KwXqdXFgA/Operate%20the%20System_oc.html" target="guideline_frame">Operate the System</a>
+								</li>
+								<li id="_62RugJtCEeGD_KwXqdXFgA" rel="ActivitySpace">
+									<a href="html/_62RugJtCEeGD_KwXqdXFgA/Prepare%20to%20do%20the%20Work_oc.html" target="guideline_frame">Prepare to do the Work</a>
+								</li>
+								<li id="_AstWYJtDEeGD_KwXqdXFgA" rel="ActivitySpace">
+									<a href="html/_AstWYJtDEeGD_KwXqdXFgA/Coordinate%20Activity_oc.html" target="guideline_frame">Coordinate Activity</a>
+								</li>
+								<li id="_Fjdp8JtDEeGD_KwXqdXFgA" rel="ActivitySpace">
+									<a href="html/_Fjdp8JtDEeGD_KwXqdXFgA/Support%20the%20Team_oc.html" target="guideline_frame">Support the Team</a>
+								</li>
+								<li id="_KzsNcJtDEeGD_KwXqdXFgA" rel="ActivitySpace">
+									<a href="html/_KzsNcJtDEeGD_KwXqdXFgA/Track%20Progress_oc.html" target="guideline_frame">Track Progress</a>
+								</li>
+								<li id="_QKyN8JtDEeGD_KwXqdXFgA" rel="ActivitySpace">
+									<a href="html/_QKyN8JtDEeGD_KwXqdXFgA/Stop%20the%20Work_oc.html" target="guideline_frame">Stop the Work</a>
+								</li>
+							</ul>
+						</li>
+						<li id="Competencies" rel="Competencies">
+							<a href="Essence%20Kernel_HTML/competencies.html" target="guideline_frame">Competencies</a>
+							<ul>
+								<li id="e51f0935-c77d-4b89-a9aa-afab0d83a4f3" rel="Competency">
+									<a href="html/e51f0935-c77d-4b89-a9aa-afab0d83a4f3/Analysis_oc.html" target="guideline_frame">Analysis</a>
+								</li>
+								<li id="265e7c5b-5cdb-4dbf-846b-e2d45278b785" rel="Competency">
+									<a href="html/265e7c5b-5cdb-4dbf-846b-e2d45278b785/Development_oc.html" target="guideline_frame">Development</a>
+								</li>
+								<li id="cff34f1b-cc2d-499f-9806-842649feca07" rel="Competency">
+									<a href="html/cff34f1b-cc2d-499f-9806-842649feca07/Leadership_oc.html" target="guideline_frame">Leadership</a>
+								</li>
+								<li id="9cd108c1-60c0-44a7-87e7-6fbf476ac1b4" rel="Competency">
+									<a href="html/9cd108c1-60c0-44a7-87e7-6fbf476ac1b4/Management_oc.html" target="guideline_frame">Management</a>
+								</li>
+								<li id="fb9cf136-d669-4b72-b7c5-0b61e1ed0004" rel="Competency">
+									<a href="html/fb9cf136-d669-4b72-b7c5-0b61e1ed0004/Stakeholder%20Representation_oc.html" target="guideline_frame">Stakeholder Representation</a>
+								</li>
+								<li id="835bbd82-6867-48a4-8186-86fc839afd17" rel="Competency">
+									<a href="html/835bbd82-6867-48a4-8186-86fc839afd17/Testing_oc.html" target="guideline_frame">Testing</a>
+								</li>
+							</ul>
+						</li>
+						<li id="AreasOfConcern" rel="AreasOfConcern">
+							<a href="Essence%20Kernel_HTML/areas_of_concern.html" target="guideline_frame">Areas of Concern</a>
+							<ul>
+								<li id="_HmSbYJqVEeGqE71CwgtiTg" rel="AreaOfConcern">
+									<a href="html/_HmSbYJqVEeGqE71CwgtiTg/Customer_gd.html" target="guideline_frame">Customer</a>
+								</li>
+								<li id="_PK6qcJqVEeGqE71CwgtiTg" rel="AreaOfConcern">
+									<a href="html/_PK6qcJqVEeGqE71CwgtiTg/Endeavor_gd.html" target="guideline_frame">Endeavor</a>
+								</li>
+								<li id="_OJ55YJqVEeGqE71CwgtiTg" rel="AreaOfConcern">
+									<a href="html/_OJ55YJqVEeGqE71CwgtiTg/Solution_gd.html" target="guideline_frame">Solution</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<script type="text/javascript">
+$(function () {
+  $('#explorer').jstree({
+    'plugins' : [ 'themes', 'html_data', 'types', 'contextmenu' ],
+    'core' : { 'initially_open' : [ '_nMRYkZhOEeGREeW8rfOh7g' ] },
+    'themes' : {
+      'theme' : 'classic',
+      'dots' : false
+    },
+    'contextmenu' : {
+      'items' : {
+        'create' : false,
+        'rename' : false,
+        'remove' : false,
+        'ccp' : false,
+        'review' : {
+          'label' : 'Review',
+          'icon' : reviewFileIcon,
+          '_disabled' : !reviewFileIcon,
+          'action' : function(obj) { var addr = getReviewFileUrl(obj.attr('id')); if (addr != '') { window.open(addr,'_blank'); }; }
+        }
+      }
+    },
+    'types' : {
+      'types' : {
+        'ThingsToWorkWith' : {
+          'icon' : {
+            'image' : 'icons/icons_16/ThingsToWorkWith.gif'
+          }
+        },
+        'ThingsToDo' : {
+          'icon' : {
+            'image' : 'icons/icons_16/ThingsToDo.gif'
+          }
+        },
+        'Competencies' : {
+          'icon' : {
+            'image' : 'icons/icons_16/Competencies.gif'
+          }
+        },
+        'Patterns' : {
+          'icon' : {
+            'image' : 'icons/icons_16/Patterns.gif'
+          }
+        },
+        'AreasOfConcern' : {
+          'icon' : {
+            'image' : 'icons/icons_16/AreasOfConcern.gif'
+          }
+        },
+        'Kernel' : {
+          'icon' : {
+            'image' : 'icons/icons_16/Kernel.gif'
+          }
+        },
+        'KernelExtension' : {
+          'icon' : {
+            'image' : 'icons/icons_16/KernelExtension.gif'
+          }
+        },
+        'PracticeAsset' : {
+          'icon' : {
+            'image' : 'icons/icons_16/PracticeAsset.gif'
+          }
+        },
+        'Practice' : {
+          'icon' : {
+            'image' : 'icons/icons_16/Practice.gif'
+          }
+        },
+        'PracticeExtension' : {
+          'icon' : {
+            'image' : 'icons/icons_16/PracticeExtension.gif'
+          }
+        },
+        'Method' : {
+          'icon' : {
+            'image' : 'icons/icons_16/Method.gif'
+          }
+        },
+        'Practices' : {
+          'icon' : {
+            'image' : 'icons/icons_16/Practices.gif'
+          }
+        },
+        'Alpha' : {
+          'icon' : {
+            'image' : 'icons/icons_16/Alpha.gif'
+          }
+        },
+        'WorkProduct' : {
+          'icon' : {
+            'image' : 'icons/icons_16/WorkProduct.gif'
+          }
+        },
+        'ActivitySpace' : {
+          'icon' : {
+            'image' : 'icons/icons_16/ActivitySpace.gif'
+          }
+        },
+        'Activity' : {
+          'icon' : {
+            'image' : 'icons/icons_16/Activity.gif'
+          }
+        },
+        'Competency' : {
+          'icon' : {
+            'image' : 'icons/icons_16/Competency.gif'
+          }
+        },
+        'PatternSpace' : {
+          'icon' : {
+            'image' : 'icons/icons_16/PatternSpace.gif'
+          }
+        },
+        'Pattern' : {
+          'icon' : {
+            'image' : 'icons/icons_16/Pattern.gif'
+          }
+        },
+        'AreaOfConcern' : {
+          'icon' : {
+            'image' : 'icons/icons_16/AreaOfConcern.gif'
+          }
+        }
+      }
+    }
+  });
+});
+</script>
+	</body>
+
+</html>

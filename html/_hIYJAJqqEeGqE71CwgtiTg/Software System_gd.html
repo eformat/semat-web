@@ -1,0 +1,211 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>Software System Guideline</title>
+		<link type="text/css" rel="stylesheet" href="../../styles/guideline.css"/>
+	</head>
+	<body>
+		<div class="icondiv">
+			<a href="Software System_oc.html">
+				<img src="../../icons/icons_16/card_icon_16.png" border="0"/>
+			</a>
+		</div>
+		<p align="right">
+			<b>Essence Kernel</b>
+		</p>
+		<h1 id="name_block">
+			<img border="0" src="../../icons/icons_64/alpha_64_solution.png"/> Software System
+		</h1>
+		<ol class="toc" style="list-style: none;">
+			<li>
+				<a href="#introduction">Introduction</a>
+			</li>
+			<li>
+				<a href="#justification">Justification: Why Software System?</a>
+			</li>
+			<li>
+				<a href="#progressing">Progressing the Software System</a>
+			</li>
+			<li>
+				<a href="#validStates">States</a>
+				<ol style="list-style: none;">
+					<li>
+						<a href="#architecture_selected">Architecture Selected</a>
+					</li>
+					<li>
+						<a href="#demonstrable">Demonstrable</a>
+					</li>
+					<li>
+						<a href="#usable">Usable</a>
+					</li>
+					<li>
+						<a href="#ready">Ready</a>
+					</li>
+					<li>
+						<a href="#operational">Operational</a>
+					</li>
+					<li>
+						<a href="#retired">Retired</a>
+					</li>
+				</ol>
+			</li>
+			<li>
+				<a href="#contents">Contents</a>
+				<ol style="list-style: none;">
+					<li>
+						<a href="#essentialContents">Essential content</a>
+					</li>
+					<li>
+						<a href="#describedBy">Described by</a>
+					</li>
+					<li>
+						<a href="#relatedAlphas">Related alphas</a>
+					</li>
+				</ol>
+			</li>
+			<li>
+				<a href="#references">References</a>
+				<ol style="list-style: none;">
+					<li>
+						<a href="#readings">Recommended reading</a>
+					</li>
+				</ol>
+			</li>
+		</ol>
+		<h1 id="introduction">Introduction</h1>
+		<p id="brief">
+			<ins>Software System:</ins> A system made up of software, hardware, and data that provides its primary value by the execution of the software. 
+		</p>
+		<p id="characteristics">A software system can be part of a larger software, hardware, business or social solution. </p>
+		<h1 id="justification">Justification: Why Software System?</h1>
+		<p>Essence uses the term software system rather than software because software engineering results in more than just a piece of software. Whilst the value may well come from the software, a working software system depends on the combination of software, hardware and data to fulfill the requirements. </p>
+		<h1 id="progressing">Progressing the Software System</h1>
+		<p>The life-cycle of a software system is hard to define as there can be many releases of a software system. These releases can be worked on and used in parallel. For example one team can be working on the development of release 3, whilst another team is making small changes to release 2, and a third team is providing support for those people still using release 1. If we treat this software system as one entity what state is it in? </p>
+		<p>To keep things simple, Essence treats each major release as a separate software system; one that is built, released, updated, and eventually retired. A major release encompasses significant changes to the purpose, usage, or architecture of a software system. It can encompass many minor releases including internal releases produced for testing purposes, and external releases produced to support incremental delivery or bug fixes. In the example above the second team would be producing a series of minor releases (2.1, 2.2, 2.3, etc.) of their software system to allow the delivery of their small changes.</p>
+		<p>During its development a software system progresses through several state changes. As presented in the figure below, they are architecture selected, demonstrable, usable, ready, operational and retired. These states provide points of stability on a software system’s journey from its conception to its eventual retirement indicating (1) when the architecture is selected, (2) when a demonstrable system is produced to prove the architecture and enable testing to start, (3) when the system is extended and improved so that it becomes usable, (4) when the usable system is enhanced until it is accepted as ready for deployment, (5) when the system is made available to the stakeholders who use it and made operational, and finally, (6) when the system itself is retired and its support is withdrawn. These states can be applied to the initial release of the software system or any subsequent modification or replacement.</p>
+		<p>
+			<img border="0" src="../../images/softwaresystem_states.png"/>
+		</p>
+		<p>The first thing to do for any major software system release is to make sure that there is an appropriate architecture available; one that complies with any applicable organizational constraints and addresses the key technical risks facing the new system. Achieving this may require the creation of a brand new architecture, the modification of an existing architecture, the selection of an existing architecture, or the simple re-use of whatever is already in place. Regardless of the approach taken, the result is that the system progresses to the architecture selected state.</p>
+		<p>Once the architecture had been selected, it must be shown to be fit-for-purpose by building and testing a demonstrable version of the system. It is not sufficient to just present a set of rolling screen-shots or a stand-alone version of a multi-user system. The system needs to be truly demonstrable exercising all of the significant characteristics of the selected architecture. It must also be capable of supporting both functional and non-functional testing.</p>
+		<p>The demonstrable system is then evolved to become usable by adding more functionality, and fixing defects. Once the system has achieved the usable state, it has all the qualities desired of an operational system. If it implements a sufficient amount of the requirements, if it provides sufficient business value, and if there is an appropriate window of opportunity for its deployment, then it can be considered to be ready for operational use. </p>
+		<p>Although, a useable system has the potential to be an operational system, there are still a few essential steps to be performed before it is ready. The system has to be accepted for use by the stakeholders, and it has to be prepared for deployment in the live environment. In this state, the system is typically supplemented with installation guidance, training materials and actual training for system operation. </p>
+		<p>The system is made operational when it is installed for real use within the live environment. It is now being used to generate value and provide benefit to its stakeholders.</p>
+		<p>Even after the software system has been made operational, development work can still continue. This may be as part of the plans for the incremental delivery of the system or, as is more common, a response to defects and problems occurring during the deployment and operation of the system. Support and maintenance continue until the software system is retired and its support is withdrawn. This may be because 1) the software system has been completely replaced by a later generation, 2) the software system no longer has any users or, 3) it does not make business sense to continue to support it.</p>
+		<p>During the development of a major release many minor releases are often produced. For example, many teams using an iterative approach produce a new release during every iteration whilst they keep their software system continuously in a usable, and therefore potentially shippable, state. It is then the stakeholder representatives who decide whether it is ready to be made operational. Obviously, this approach is not always possible, particularly if major architectural changes are required as these often render the system unusable for a significant period of time.</p>
+		<p>Understanding the current and desired states of a software system helps everyone understand when a system is ready, what kinds of changes can be realistically made to the system, and what kinds of work should be left to a later generation of the software system.</p>
+		<h1 id="validStates">States</h1>
+<h2 id="architecture_selected">
+	<img border="0" src="../../icons/icons_64/state_64_grey.png"/> Architecture Selected
+</h2>
+<p>	An architecture has been selected that addresses the key technical risks and any applicable organizational constraints.</p>
+<h3 id="checkpoints">	Checkpoints</h3>
+<p>	The alpha is in this state when:</p>
+<ul>
+	<li>The criteria to be used when selecting the architecture have been agreed on.</li>
+	<li>Hardware platforms have been identified.</li>
+	<li>Programming languages and technologies to be used have been selected.</li>
+	<li>System boundary is known.</li>
+	<li>Significant decisions about the organization of the system have been made.</li>
+	<li>Buy, build and reuse decisions have been made.</li>
+</ul>
+<h2 id="demonstrable">
+	<img border="0" src="../../icons/icons_64/state_64_grey.png"/> Demonstrable
+</h2>
+<p>	An executable version of the system is available that demonstrates the architecture is fit for purpose and supports functional and non-functional testing.</p>
+<h3 id="checkpoints">	Checkpoints</h3>
+<p>	The alpha is in this state when:</p>
+<ul>
+	<li>Key architectural characteristics have been demonstrated.</li>
+	<li>The system can be exercised and its performance can be measured.</li>
+	<li>Critical hardware configurations have been demonstrated.</li>
+	<li>Critical interfaces have been demonstrated.</li>
+	<li>The integration with other existing systems has been demonstrated.</li>
+	<li>The relevant stakeholders agree that the demonstrated architecture is appropriate.</li>
+</ul>
+<h2 id="usable">
+	<img border="0" src="../../icons/icons_64/state_64_grey.png"/> Usable
+</h2>
+<p>	The system is usable and demonstrates all of the quality characteristics of an operational system.</p>
+<h3 id="checkpoints">	Checkpoints</h3>
+<p>	The alpha is in this state when:</p>
+<ul>
+	<li>The system can be operated by stakeholders who use it.</li>
+	<li>The functionality provided by the system has been tested.</li>
+	<li>The performance of the system is acceptable to the stakeholders.</li>
+	<li>Defect levels are acceptable to the stakeholders.</li>
+	<li>The system is fully documented.</li>
+	<li>Release content is known.</li>
+	<li>The added value provided by the system is clear.</li>
+</ul>
+<h2 id="ready">
+	<img border="0" src="../../icons/icons_64/state_64_grey.png"/> Ready
+</h2>
+<p>	The system (as a whole) has been accepted for deployment in a live environment.</p>
+<h3 id="checkpoints">	Checkpoints</h3>
+<p>	The alpha is in this state when:</p>
+<ul>
+	<li>Installation and other user documentation are available.</li>
+	<li>The stakeholder representatives accept the system as fit-for-purpose.</li>
+	<li>The stakeholder representatives want to make the system operational.</li>
+	<li>Operational support is in place.</li>
+</ul>
+<h2 id="operational">
+	<img border="0" src="../../icons/icons_64/state_64_grey.png"/> Operational
+</h2>
+<p>	The system is in use in a live environment.</p>
+<h3 id="checkpoints">	Checkpoints</h3>
+<p>	The alpha is in this state when:</p>
+<ul>
+	<li>The system has been made available to the stakeholders intended to use it.</li>
+	<li>At least one example of the system is fully operational.</li>
+	<li>The system is fully supported to the agreed service levels.</li>
+</ul>
+<h2 id="retired">
+	<img border="0" src="../../icons/icons_64/state_64_grey.png"/> Retired
+</h2>
+<p>	The system is no longer supported.</p>
+<h3 id="checkpoints">	Checkpoints</h3>
+<p>	The alpha is in this state when:</p>
+<ul>
+	<li>The system has been replaced or discontinued.</li>
+	<li>The system is no longer supported.</li>
+	<li>There are no �official� stakeholders who still use the system.</li>
+	<li>Updates to the system will no longer be produced.</li>
+</ul>
+		<h1 id="contents">Contents</h1>
+		<h2 id="essentialContents">Essential content</h2>
+		<p>N/A</p>
+		<h2 id="describedBy">Described by</h2>
+		<p id="contents">N/A</p>
+		<h2 id="relatedAlphas">Related alphas</h2>
+		<ul>
+			<li>
+				<a href="../_Kde1gJqWEeGqE71CwgtiTg/Stakeholders_gd.html">Stakeholders</a> use and consume Software System
+			</li>
+			<li>Software System helps to address 
+				<a href="../_thrioJqXEeGqE71CwgtiTg/Opportunity_gd.html">Opportunity</a>
+			</li>
+			<li>Software Systems fulfills 
+				<a href="../_f9EMcJqqEeGqE71CwgtiTg/Requirements_gd.html">Requirements</a>
+			</li>
+			<li>
+				<a href="../_IuWcIJtEEeGD_KwXqdXFgA/Team_gd.html">Team</a> produces Software System
+			</li>
+			<li>
+				<a href="../_e62xAJs4EeGz7PwLWcYeYg/Work_gd.html">Work</a> updates and changes Software System
+			</li>
+		</ul>
+		<h1 id="references">References</h1>
+		<h2 id="readings">Recommended reading</h2>
+		<ul>
+			<li>Refer to 
+				<a href="http://www.semat.org" target="_blank">www.semat.org</a>
+			</li>
+		</ul>
+		<hr></hr>
+		<p style="text-align:center;">Copyright &#169; 2012 Ivar Jacobson International AB, Florida Atlantic University, Fujitsu, Impetus, International Business Machines Corporation, KTH Royal Institute of Technology, Metamaxim Ltd., PEM Systems, Stiftelsen SINTEF, University of Duisburg-Essen.  , ver. 1.0.3</p>
+	</body>
+</html>
