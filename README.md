@@ -6,6 +6,16 @@ Generated from - https://github.com/SINTEF-9012/remics-essence
 
 [![License: CC BY 4.0](https://licensebuttons.net/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)
 
+### Test Locally
+npm i
+npm start
+
+Browse to:
+
+```
+https://localhost:8080/
+```
+
 ### Deploy on Openshift
 
 You need a node6 s2i builder image for h2:
