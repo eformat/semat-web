@@ -6,4 +6,22 @@ Generated from - https://github.com/SINTEF-9012/remics-essence
 
 [![License: CC BY 4.0](https://licensebuttons.net/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)
 
-[![LAUNCH ON OpenShift](http://launch-shifter.rhcloud.com/launch/light/LAUNCH)](https://192.168.137.2:8443/create?imageStream=nodejs&imageTag=4&name=nodejs&sourceURI=https%3A%2F%2Fgithub.com%2Feformat%2Fsemat-web.git&sourceRef=master)
+### Deploy on Openshift
+
+You need a node6 s2i builder image for h2:
+
+```
+oc import-image centos7-s2i-nodejs --from=docker.io/ryanj/centos7-s2i-nodejs:current --confirm -n openshift
+oc tag -n openshift --insecure=true --source=docker docker.io/ryanj/centos7-s2i-nodejs:current openshift/centos7-s2i-nodejs:latest
+```
+
+Build and Deploy:
+
+```
+oc new-project semat
+oc new-build --binary --name=semat -l app=semat -i centos7-s2i-nodejs
+oc start-build semat --from-dir=. --follow
+oc new-app semat
+oc expose svc semat
+oc patch route/semat -p '{"spec":{"tls":{"termination":"passthrough"}}}'
+```
