@@ -1,6 +1,6 @@
-# semat-web
+# semat-web - http://semat.org/
 
-SEMAT (Software Engineering Method and Theory) drives a process to refound software engineering based on a solid theory, proven principles and best practices - http://semat.org/
+SEMAT (Software Engineering Method and Theory) drives a process to refound software engineering based on a solid theory, proven principles and best practices
 
 Generated from - https://github.com/SINTEF-9012/remics-essence
 
