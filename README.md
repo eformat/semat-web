@@ -7,8 +7,12 @@ Generated from - https://github.com/SINTEF-9012/remics-essence
 [![License: CC BY 4.0](https://licensebuttons.net/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)
 
 ### Test Locally
+You need node6 and npm3:
+
+```
 npm i
 npm start
+```
 
 Browse to:
 
